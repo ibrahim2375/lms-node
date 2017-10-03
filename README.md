@@ -7,30 +7,29 @@ Learn more docker compose <a href="https://docs.docker.com/compose/overview/" ta
 ## PLayground
 
 1. Clone this repository
-    
-    `git clone git@github.com:fuadajip/dockercompose-mysql-phpmyadmin.git`
+```
+    git clone git@github.com:fuadajip/dockercompose-mysql-phpmyadmin.git
+```
 
 2. Change to directory
-
-    `cd dockercompose-mysql-phpmyadmin`
-
+```shell
+    cd dockercompose-mysql-phpmyadmin
+```
 3. Up the compose
-
-   `docker-compose up -d`
-
+```
+    docker-compose up -d
+```
 4. Access phpmyadmin
-
-    `your_ip:8183`
-
-    `Server: mysql`
-
-    `Username: root/user`
-    
-    `Password: root/user`
-
+```
+    your_ip:8183
+    Server: mysql
+    Username: root/user
+    Password: root/user
+```
 5. Access mysql on terminal
-
-    `docker exec -it mysql_container_name mysql -u root -p`
+```
+    docker exec -it mysql_container_name mysql -u root -p
+```
 
 ## Docker phpmyadmin ENV
 <table>
