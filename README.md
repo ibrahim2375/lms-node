@@ -30,6 +30,7 @@ Learn more docker compose <a href="https://docs.docker.com/compose/overview/" ta
 ```
     docker exec -it mysql_container_name mysql -u root -p
 ```
+
 ## Docker phpmyadmin ENV
 <table>
 <tr>
