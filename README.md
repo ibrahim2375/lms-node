@@ -4,7 +4,7 @@ Compose is a tool for defining and running multi-container Docker applications. 
 
 Learn more docker compose <a href="https://docs.docker.com/compose/overview/" target="_blank">here</a>
 
-## PLayground
+## Playground
 
 1. Clone this repository
 ```
