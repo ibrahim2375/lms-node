@@ -1,54 +1,33 @@
-# DOCKER COMPOSE PHPMYADMIN MYSQL
+# LMS
 
-Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration. 
-
-Learn more docker compose <a href="https://docs.docker.com/compose/overview/" target="_blank">here</a>
+LMS Graduation Project
+## Languages and Tools
+- NodeJs
+- express
+- EJS(Template Engine)
+- Bootstrap(UI Framework)
+- Mysql
+- phpMyAdmin
 
 ## Playground
 
 1. Clone this repository
+2. install node packages
 ```
-    git clone git@github.com:fuadajip/dockercompose-mysql-phpmyadmin.git
+ npm i
+```
+or 
+```
+yarn
 ```
 
-2. Change to directory
+3- run it local
 ```shell
-    cd dockercompose-mysql-phpmyadmin
+npm start
 ```
-3. Up the compose
+or 
 ```
-    docker-compose up -d
-```
-4. Access phpmyadmin
-```
-    your_ip:8183
-    Server: mysql
-    Username: root/user
-    Password: root/user
-```
-5. Access mysql on terminal
-```
-    docker exec -it mysql_container_name mysql -u root -p
+yarn start
 ```
 
-## Docker phpmyadmin ENV
-<table>
-<tr>
-<td>PMA_ARBITRARY </td>
-<td>when set to 1 connection to the arbitrary server will be allowed</td>
-</tr>
-<tr>
-<td>PPMA_HOST </td>
-<td>define address/host name of the MySQL server</td>
-</tr>
-<tr>
-<td>PMA_PORT </td>
-<td> define port of the MySQL server</td>
-</tr>
-</table>
-
-## For more information about phpmyadmin image
-<a href="https://hub.docker.com/r/phpmyadmin/phpmyadmin/" target="_blank">READ HERE</a>
-
-## For more information about mysql ENV
-<a href="https://hub.docker.com/_/mysql/" target="_blank">READ HERE</a>
+4- optional for now till it's implemented provide the right env key values
