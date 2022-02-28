@@ -4,6 +4,6 @@ const router = express.Router();
 const template_controller = require('../../controllers/users.controller')
 
 router.get('/users', template_controller.getUsers);
-router.post('/users', template_controller.saveUser);
+// router.post('/users', template_controller.saveUser);
 
 module.exports = router;

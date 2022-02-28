@@ -21,13 +21,9 @@ or
 yarn
 ```
 
-3- run it local
-```shell
-npm start
-```
-or 
-```
-yarn start
-```
+3- copy .env.example into new file named .env
 
-4- optional for now till it's implemented provide the right env key values
+4- run it local
+```
+nodemon
+```
