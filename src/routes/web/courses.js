@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-const template_controller = require('../../controllers/users.controller')
+const courses_controller = require('../../controllers/courses.controller')
 
-router.get('/users', template_controller.getUsers);
+router.get('/', courses_controller.getCourses);
 // router.post('/users', template_controller.saveUser);
 
 module.exports = router;

@@ -1,16 +1,11 @@
 const sharp = require('sharp');
 const fs = require('fs')
+const User = require("../../models/user")
 
 const methods = {
-    async getUsers(data) {
-        return new Promise(async (resolve, reject) => {
-            try {
-                
-                resolve(true)
-            } catch (error) {
-                reject(methods.error(error.message, 400))
-            }
-        });
+    async getUsers() {
+        const users = await User.findAll();
+        return users;
     }
 }
 

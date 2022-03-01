@@ -8,6 +8,7 @@ LMS Graduation Project
 - Bootstrap(UI Framework)
 - Mysql
 - phpMyAdmin
+- sequelize (ORM) https://sequelize.org/master/manual/getting-started.html
 
 ## Playground
 
@@ -27,3 +28,6 @@ yarn
 ```
 nodemon
 ```
+
+### Optional for now 
+5- install mysql and phpmyadmin or xamp
