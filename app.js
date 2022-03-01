@@ -10,8 +10,8 @@ app.set('views', __dirname + '/src/views');
 app.set('view engine', 'ejs')
 
 // call sysc()
-const db = require("./models");
-db.sequelize.sync();
+// const db = require("./models");
+// db.sequelize.sync();
 
 //routes
 const indexRouter = require('./src/routes/index');
