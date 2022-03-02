@@ -17,15 +17,16 @@ app.set('view engine', 'ejs')
 const indexRouter = require('./src/routes/index');
 
 app.use('/', indexRouter);
-
+//image
+app.use(express.static("public"));
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
     next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
-    console.log("error",err)
+app.use(function (err, req, res, next) {
+    console.log("error", err)
     // set locals, only providing error in development
     res.locals.message = err.message;
     res.locals.error = req.app.get('env') === 'development' ? err : {};

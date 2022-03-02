@@ -1,11 +1,114 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">EJS Is Fun</a>
-    <ul class="navbar-nav mr-auto">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarCenteredExample"
+      aria-controls="navbarCenteredExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarCenteredExample"
+    >
+      <!-- Left links -->
+      <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-            <a class="nav-link" href="/users">Users</a>
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Faculties
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!-- parts -->
+            <li>
+              <a class="dropdown-item" href="#">Medicine</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Dentistry</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Pharmacy</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Physical Therapy</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                >Applied Health Sciences Technology</a
+              >
+              <a class="dropdown-item" href="#">Faculty Of Nursing</a>
+              <a class="dropdown-item" href="#">Engineering</a>
+              <a class="dropdown-item" href="#">Applied Arts</a>
+              <a class="dropdown-item" href="#">Media & Mass Comm.</a>
+              <a class="dropdown-item" href="#">Economics & Management</a>
+              <a class="dropdown-item" href="#">Languages & Translation</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#"
+                >Info. Systems & Comp. Science</a
+              >
+            </li>
+            <!-- parts -->
+          </ul>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/courses">Courses</a>
+          <a class="nav-link" href="/courses">Courses</a>
         </li>
-    </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="/student">Student</a>
+        </li>
+        <!-- Navbar dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Admission
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!-- admission items -->
+            <li>
+              <a class="dropdown-item" href="#">Tuition Fees</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Requierd Documents</a>
+              <a class="dropdown-item" href="#">Transfer Rules</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#">Hotel Fees</a>
+            </li>
+            <!-- admission items -->
+          </ul>
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
 </nav>
