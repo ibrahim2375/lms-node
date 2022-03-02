@@ -24,7 +24,7 @@ const methods = {
 
             // let result =  await Service.getUsers()
             // console.log("res", result)
-            res.render("users/list.ejs", {users : []})
+            res.render("users/student.ejs", {users : []})
 
         } catch (error) {
             res.error(error.message, error.status)

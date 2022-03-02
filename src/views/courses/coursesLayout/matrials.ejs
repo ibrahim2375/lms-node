@@ -1,0 +1,17 @@
+<% const college = [{title: 'arts',img:'/images/Arts.jpg'},{title:
+'econimic',img:'/images/Economics.jpg'}] %>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <% college.forEach((col) => { %>
+  <!-- card -->
+  <div class="col">
+    <div class="card h-100">
+      <img src="<%= col.img %>" class="card-img-top" alt="Palm Springs Road" />
+      <div class="card-body">
+        <h5 class="card-title"><%= col.title %></h5>
+      </div>
+    </div>
+  </div>
+  <!-- card -->
+  <%}) %>
+</div>

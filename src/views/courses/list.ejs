@@ -1,48 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <%- include('../layout/head'); %>
-</head>
-<body >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>o6u</title>
+    <!-- css -->
+    <%- include('../../bootstrab/syles.ejs') %>
+  </head>
+  <body>
+    <header><%- include('../layout/navbar.ejs') %></header>
+    <main class="mb-5">
+      <section><%- include('./coursesLayout/landing.ejs') %></section>
+      <section class="container mt-5 pt-2 pb-2">
+        <%- include('./coursesLayout/matrials.ejs') %>
+      </section>
+    </main>
+    <%- include('../layout/footer.ejs') %>
 
-<header>
-    <%- include('../layout/navbar'); %>
-</header>
-
-<main>
-    <h1>
-        Courses List
-    </h1>
-
-    <div class="card" style="width: 18rem;">
-        <img src="https://assets.hongkiat.com/uploads/100-absolutely-beautiful-nature-wallpapers-for-your-desktop/blue-sea-sunset.jpg" class="card-img-top" alt="">
-        <div class="card-body">
-            <h5 class="card-title">Course 1</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="https://assets.hongkiat.com/uploads/100-absolutely-beautiful-nature-wallpapers-for-your-desktop/blue-sea-sunset.jpg" class="card-img-top" alt="">
-        <div class="card-body">
-            <h5 class="card-title">Course 2</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="https://assets.hongkiat.com/uploads/100-absolutely-beautiful-nature-wallpapers-for-your-desktop/blue-sea-sunset.jpg" class="card-img-top" alt="">
-        <div class="card-body">
-            <h5 class="card-title">Course 3</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-</main>
-
-<footer>
-    <%- include('../layout/footer'); %>
-</footer>
-
-</body>
+    <!-- js -->
+    <%- include('../../bootstrab/js.ejs') %>
+  </body>
 </html>

@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
 require('dotenv').config();
-const port = process.env.PORT
-const host = process.env.URL
+// const port = process.env.PORT
+// const host = process.env.URL
+const port = 3000
+const host = '127.0.0.1'
 
 const createError = require('http-errors');
 
