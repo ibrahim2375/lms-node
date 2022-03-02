@@ -1,8 +1,19 @@
-<% const college = [{title: 'arts',img:'/images/Arts.jpg'},{title:
-'econimic',img:'/images/Economics.jpg'}] %>
+<% const colleges=[{title:'Applied Arts',img:'/images/Arts.jpg'},
+{title:'Economics & Management',img:'/images/Economics.jpg'},
+{title:'Engineering',img:'/images/engineering.jpg'},
+{title:'Faculty of Nursing',img:'/images/nursing.jpg'},
+{title:'Info. Systems & Comp.Science',img:'/images/infosys.jpg'},
+{title:'Languages&Translation',img:'/images/languages.jpg'},
+ {title:'Media & Mass Comm',img:'/images/media.jpg'},
+ {title:'Medicine',img:'/images/medicine.jpg'},
+ {title:'Pharmacy',img:'/images/pharmacy.jpg'},
+ {title:'Physical Therapy',img:'/images/physical.jpg'},
+ {title:'Postgraduate Studies',img:'/images/postgraduate.png'},
+ {title:'Tourism and Hotels',img:'/images/tourism.png'},
+]%>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
-  <% college.forEach((col) => { %>
+  <% colleges.forEach((col) => { %>
   <!-- card -->
   <div class="col">
     <div class="card h-100">
@@ -13,5 +24,5 @@
     </div>
   </div>
   <!-- card -->
-  <%}) %>
+  <% }) %>
 </div>
