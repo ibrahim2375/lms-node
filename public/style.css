@@ -129,5 +129,16 @@
   }
 }
 @media (max-width: 768px) {
+    #wrapper {
+    padding-left: 0;
+  }
+  #wrapper.toggled {
+    padding-left: 0;
+  }
+  #sidebar-wrapper {
+    width: 0;
+  }
+
+
  
 }

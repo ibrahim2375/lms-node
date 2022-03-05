@@ -8,5 +8,7 @@ router.use('/tables', require('./tables'))
 router.use('/acadmic-records', require('./record'))
 router.use('/exams', require('./exam'))
 router.use('/login', require('./login'))
+router.use('/logout', require('./logout'))
+router.use('/api', require('./api'))
 
 module.exports = router
