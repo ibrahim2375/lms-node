@@ -74,8 +74,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/courses">Courses</a>
         </li>
-        <% } %> 
-        <% if( currentUser){ %>
+
         <li class="nav-item">
           <a class="nav-link" href="/user">Student</a>
         </li>
@@ -115,10 +114,11 @@
     </div>
     <!-- Collapsible wrapper -->
     <!-- email -->
-    <% if( currentUser){ %> <% const cuser = currentUser.email; const newUser =
-    cuser.replace('@gmail.com','');%>
-    <h5><%= newUser %></h5>
+    <% if(currentUser){ %>
+
+    <h5><%= currentUser.name %></h5>
     <% } %>
+
     <!-- email -->
     <!-- logout -->
     <% if(currentUser){ %>

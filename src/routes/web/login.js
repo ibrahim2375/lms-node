@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
-var bodyParser = require('body-parser');
-var cookieParser = require('cookie-parser');
+
 var session = require('express-session');
 var User = require('../../../models');
 
@@ -27,10 +26,9 @@ router.get('/', sessionChecker, getLogin);
 router.post('/', getUser);
 
 
-var Content = { userName: '', loggedin: false};
+
 async function getLogin(req, res) {
     try {
-
         res.render('Login/login.ejs');
 
     } catch (error) {
@@ -41,10 +39,9 @@ async function getUser(req, res) {
     try {
         var username = req.body.email,
             password = req.body.password;
-
-        await User.User.findOne({ where: { email: username, password: password } }).then(function (user) {
+        //sequelize check user
+        await User.users.findOne({ where: { email: username, password: password } }).then(function (user) {
             if (!user) {
-                // res.render({ not: "not founded" });
                 res.redirect('/login');
             } else {
                 req.session.user = user.dataValues;
@@ -57,13 +54,6 @@ async function getUser(req, res) {
     }
 }
 //new
-
-
-
-//new
-
-// var hbsContent = { userName: '', loggedin: false, title: "You are not logged in today", body: "Hello World" };
-
 
 
 module.exports = router;

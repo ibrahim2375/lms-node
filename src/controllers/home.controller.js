@@ -1,5 +1,6 @@
 require('dotenv').config();
 var session = require('express-session');
+var users = require('../../models/');
 const methods = {
     async getHome(req, res) {
         try {
@@ -9,10 +10,11 @@ const methods = {
                 userinfo.userName = req.session.user.email;
                 // console.log(JSON.stringify(req.session.user));
                 // console.log(req.session.user.email);
-
                 // res.render('index.ejs', userinfo);
+     
             }
-            res.render("index.ejs", { currentUser: req.session.user, user: [userinfo]})
+
+            res.render("index.ejs", { currentUser: req.session.user})
         } catch (error) {
             res.error(error.message, error.status)
         }

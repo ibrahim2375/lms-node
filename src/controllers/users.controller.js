@@ -40,9 +40,9 @@ const methods = {
         
             // });
           
-            await users.User.findOne({ where: { email: req.session.user.email } }).then(function (user) {
-                console.log(user);
-            });
+            // await users.User.findOne({ where: { email: req.session.user.email } }).then(function (user) {
+            //     console.log(user);
+            // });
 
 
             res.render("users/student.ejs", { currentUser: req.session.user });

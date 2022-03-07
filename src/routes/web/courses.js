@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 var session = require('express-session');
 
-const courses_controller = require('../../controllers/courses.controller')
+// const courses_controller = require('../../controllers/courses.controller')
 
 router.get('/', getCourses);
 // router.post('/users', template_controller.saveUser);
